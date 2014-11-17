@@ -1,0 +1,11 @@
+--- gcc/cp/cfns.gperf
++++ gcc/cp/cfns.gperf	
+@@ -8,7 +8,7 @@
+ __inline
+ #endif
+ #endif
+-const char * libc_name_p (const char *, unsigned int);
++__attribute__ ((gnu_inline)) const char * libc_name_p (const char *, unsigned int);
+ %}
+ %%
+ # The standard C library functions, for feeding to gperf; the result is used
