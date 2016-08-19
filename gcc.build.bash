@@ -1,5 +1,12 @@
 #!/bin/bash -ex
 
+if [[ ! -f gcc-4.3.2.tar.bz2 ]] ;
+then
+	wget ftp://ftp.fu-berlin.de/unix/languages/gcc/releases/gcc-4.3.2/gcc-4.3.2.tar.bz2
+fi
+
+tar xfjv gcc-4.3.2.tar.bz2
+
 if [[ ! -f gmp-4.3.2.tar.bz2  ]] ;
 then
 	wget ftp://ftp.fu-berlin.de/unix/languages/gcc/infrastructure/gmp-4.3.2.tar.bz2
@@ -21,20 +28,13 @@ fi
 
 tar xfzv mpc-0.8.1.tar.gz
 
-if [[ ! -f gcc-4.3.2.tar.bz2 ]] ;
-then
-	wget ftp://ftp.fu-berlin.de/unix/languages/gcc/releases/gcc-4.3.2/gcc-4.3.2.tar.bz2
-fi
-
-tar xfjv gcc-4.3.2.tar.bz2
-
 cd gcc-4.3.2
+mv ../gmp-4.3.2 ./gmp
+mv ../mpfr-2.4.2 ./mpfr
+mv ../mpc-0.8.1 ./mpc
+
 for p in ../gcc-patches/*.patch; do echo Applying $p; patch -p0 < $p; done
 cd -
-
-mv gmp-4.3.2 gcc-4.3.2/gmp
-mv mpfr-2.4.2 gcc-4.3.2/mpfr
-mv mpc-0.8.1 gcc-4.3.2/mpc
 
 mkdir -p objdir
 cd objdir

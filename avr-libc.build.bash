@@ -23,7 +23,7 @@ cd avr-libc-build
 
 CONFARGS=" \
 	--prefix=$PREFIX \
-	--build=mips \
+	--build=mipsel \
 	--host=avr"
 
 PATH=$PREFIX/bin:$PATH CC="avr-gcc" CXX="avr-g++" CFLAGS="-w -Os $CFLAGS" CXXFLAGS="-w -Os $CXXFLAGS" LDFLAGS="-s $LDFLAGS" ../avr-libc-1.6.4/configure $CONFARGS

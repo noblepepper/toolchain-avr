@@ -1,5 +1,5 @@
---- ../mpfr-2.4.2/mpfr-longlong.h
-+++ ../mpfr-2.4.2/mpfr-longlong.h
+--- mpfr/mpfr-longlong.h
++++ mpfr/mpfr-longlong.h
 1014c1014,1025
 < #if __GNUC__ > 2 || __GNUC_MINOR__ >= 7
 ---
