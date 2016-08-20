@@ -1,4 +1,4 @@
-#!/bin/bash -ex
+#!/bin/ash -ex
 
 rm -rf objdir
 

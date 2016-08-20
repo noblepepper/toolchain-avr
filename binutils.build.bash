@@ -1,4 +1,4 @@
-#!/bin/bash -ex
+#!/bin/ash -ex
 
 if [[ ! -f binutils-2.20.1a.tar.bz2  ]] ;
 then

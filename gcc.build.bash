@@ -1,4 +1,4 @@
-#!/bin/bash -ex
+#!/bin/ash -ex
 
 if [[ ! -f gcc-4.3.2.tar.bz2 ]] ;
 then

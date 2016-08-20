@@ -1,4 +1,4 @@
-#!/bin/bash -ex
+#!/bin/ash -ex
 
 ./build.all.exceptavrdude.bash
 rm -f avr-toolchain-*.zip
