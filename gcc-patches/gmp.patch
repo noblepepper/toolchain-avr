@@ -1,6 +1,6 @@
 diff -Naur a/gmp/configure b/gmp/configure
---- a/gmp/configure	2016-08-20 12:58:11.326333231 +0000
-+++ b/gmp/configure	2016-08-20 12:58:54.957037552 +0000
+--- gmp/configure	2016-08-20 12:58:11.326333231 +0000
++++ gmp/configure	2016-08-20 12:58:54.957037552 +0000
 @@ -30007,7 +30007,7 @@
  
  
@@ -11,8 +11,8 @@ diff -Naur a/gmp/configure b/gmp/configure
  
  # Only do the GMP_ASM checks if there's a .S or .asm wanting them.
 diff -Naur a/gmp/configure.in b/gmp/configure.in
---- a/gmp/configure.in	2016-08-20 12:59:08.717259874 +0000
-+++ b/gmp/configure.in	2016-08-20 12:59:32.297641076 +0000
+--- gmp/configure.in	2016-08-20 12:59:08.717259874 +0000
++++ gmp/configure.in	2016-08-20 12:59:32.297641076 +0000
 @@ -2943,7 +2943,7 @@
    GMP_PROG_M4
    GMP_M4_M4WRAP_SPURIOUS
